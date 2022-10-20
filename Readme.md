@@ -13,6 +13,7 @@
 ## Công cụ hỗ trợ
    - Publish local lên internet: Ngrok
    - Ảo hoá: Docker, Docker compose
+   - SSH: OpenSSH
 ## CICD Pipeline
    - Jenskin
 ## Cài đặt các server
