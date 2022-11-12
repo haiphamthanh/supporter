@@ -1,0 +1,1 @@
+Support to android application deployment

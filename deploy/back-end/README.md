@@ -1,11 +1,12 @@
-# Đây là guildeline hướng dẫn deploy một server
+Support to back-end application deployment
+
 1. Web server
-3. Công cụ hỗ trợ
-2. CICD Pipeline
-3. Cài đặt các server
-4. Cài đặt Hosting
-5. Database
-6. Caching
+2. Công cụ hỗ trợ
+3. CICD Pipeline
+4. Cài đặt các server
+5. Cài đặt Hosting
+6. Database
+7. Caching
 
 # Nội dung chi tiết
 ## Web server
