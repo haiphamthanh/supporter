@@ -90,10 +90,29 @@ https://~
 
 ### Docker network
 https://www.youtube.com/watch?v=k1SwXOxvMdE
+https://docs.docker.com/engine/reference/commandline/network_connect/
 
 ```
+<!-- Create a network -->
+docker network create [OPTIONS] NETWORK
+
+<!-- List networks -->
+docker network ls [OPTIONS]
+
+<!-- Connect a container to a network -->
+docker network connect [OPTIONS] NETWORK CONTAINER
+
+<!-- Disconnect a container from a network -->
+docker network disconnect [OPTIONS] NETWORK CONTAINER
+
 <!-- Inspect network -->
 $ docker network inspect bridge
+
+<!-- Remove one or more networks -->
+docker network rm NETWORK [NETWORK...]
+
+<!-- Remove all unused networks -->
+docker network prune [OPTIONS]
 ```
 
 ### Docker-compose
