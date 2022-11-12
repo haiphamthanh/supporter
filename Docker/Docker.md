@@ -82,10 +82,23 @@ $ sudo nmap -v -sV localhost
 ```
 
 ### Docker volumes
-https://~
+https://docs.docker.com/engine/reference/commandline/volume_create/
 
 ```
-<!-- Sample -->
+<!-- Create a volume -->
+$ docker volume create [OPTIONS] [VOLUME]
+
+<!-- List volumes -->
+$ docker volume ls [OPTIONS]
+
+<!-- Display detailed information on one or more volumes -->
+$ docker volume inspect [OPTIONS] VOLUME [VOLUME...]
+
+<!-- Remove one or more volumes -->
+$ docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+<!-- Remove all unused local volumes -->
+$ docker volume prune [OPTIONS]
 ```
 
 ### Docker network
@@ -94,25 +107,25 @@ https://docs.docker.com/engine/reference/commandline/network_connect/
 
 ```
 <!-- Create a network -->
-docker network create [OPTIONS] NETWORK
+$ docker network create [OPTIONS] NETWORK
 
 <!-- List networks -->
-docker network ls [OPTIONS]
+$ docker network ls [OPTIONS]
 
 <!-- Connect a container to a network -->
-docker network connect [OPTIONS] NETWORK CONTAINER
+$ docker network connect [OPTIONS] NETWORK CONTAINER
 
 <!-- Disconnect a container from a network -->
-docker network disconnect [OPTIONS] NETWORK CONTAINER
+$ docker network disconnect [OPTIONS] NETWORK CONTAINER
 
 <!-- Inspect network -->
-$ docker network inspect bridge
+$ docker network inspect [OPTIONS] NETWORK [NETWORK...]
 
 <!-- Remove one or more networks -->
-docker network rm NETWORK [NETWORK...]
+$ docker network rm NETWORK [NETWORK...]
 
 <!-- Remove all unused networks -->
-docker network prune [OPTIONS]
+$ docker network prune [OPTIONS]
 ```
 
 ### Docker-compose
